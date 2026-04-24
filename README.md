@@ -1,4 +1,3 @@
-<img width="561" height="114" alt="Screenshot 2026-04-24 at 1 48 33 PM" src="https://github.com/user-attachments/assets/2580bd4c-680b-40d6-8d8b-1f7562e75b9f" />
 **Name:** Shreya Raghuraj
 
 **SRN:** PES2UG24AM154
