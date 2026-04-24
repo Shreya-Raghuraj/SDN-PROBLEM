@@ -78,6 +78,7 @@ INFO:core:POX is up.
 ```bash
 sudo python3 ~/topology.py
 ```
+<img width="320" height="146" alt="Screenshot 2026-04-24 at 1 51 59 PM" src="https://github.com/user-attachments/assets/c134ec00-3b7b-48b7-b988-f19c4af94b4d" />
 
 ---
 
@@ -86,20 +87,31 @@ sudo python3 ~/topology.py
 ```bash
 # Generate ICMP traffic (ping)
 mininet> h1 ping -c5 h4
+```
+<img width="763" height="438" alt="Screenshot 2026-04-24 at 1 53 32 PM" src="https://github.com/user-attachments/assets/c5b7d03b-2c64-4bfd-a085-c667d8df81a9" />
 
+```
 # Generate TCP traffic (iperf)
 mininet> iperf h1 h4
+```
+<img width="763" height="438" alt="Screenshot 2026-04-24 at 1 54 29 PM" src="https://github.com/user-attachments/assets/b27cce55-79eb-48e3-9498-72bcf59301e8" />
+```
 
 # Generate UDP traffic
 mininet> h5 iperf -s -u &
-mininet> h2 iperf -c 10.0.0.5 -u -t3
 
+mininet> h2 iperf -c 10.0.0.5 -u -t3
+```
+```
 # Show installed flow rules
 mininet> sh ovs-ofctl -O OpenFlow10 dump-flows s1
-
+```
+<img width="763" height="74" alt="Screenshot 2026-04-24 at 1 55 50 PM" src="https://github.com/user-attachments/assets/2d5df095-490a-42d7-98e5-149357d19812" />
+```
 # Test all host connectivity
 mininet> pingall
 ```
+<img width="410" height="170" alt="Screenshot 2026-04-24 at 1 56 25 PM" src="https://github.com/user-attachments/assets/f8c68026-085b-4fbb-a48d-b6fffe8585cf" />
 
 ---
 
