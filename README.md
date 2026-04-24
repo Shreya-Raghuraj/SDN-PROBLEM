@@ -96,12 +96,10 @@ mininet> iperf h1 h4
 ```
 <img width="763" height="438" alt="Screenshot 2026-04-24 at 1 54 29 PM" src="https://github.com/user-attachments/assets/b27cce55-79eb-48e3-9498-72bcf59301e8" />
 ```
-
 # Generate UDP traffic
 mininet> h5 iperf -s -u &
 
 mininet> h2 iperf -c 10.0.0.5 -u -t3
-
 ```
 # Show installed flow rules
 mininet> sh ovs-ofctl -O OpenFlow10 dump-flows s1
